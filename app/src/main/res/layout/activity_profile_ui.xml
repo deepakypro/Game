@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.thelosers.game.Home.MyWishlistUi">
+
+    <include
+        android:id="@+id/homeNoInternet"
+        layout="@layout/nointernet"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/homeShowInternetOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space56dp"
+        android:background="@color/White">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/White"
+            android:onClick="onClickBackArrowProfile"
+            android:padding="@dimen/space10dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:text="My WishList"
+            android:textColor="@color/newblack"
+            android:textSize="@dimen/text25sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/wishlistProgressbar"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mywishlistRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="60dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+</RelativeLayout>

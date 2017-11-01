@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xboxcolor"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space56dp">
+
+            <ImageButton
+                android:id="@+id/platformClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space10dp"
+                android:layout_marginTop="@dimen/space10dp"
+                android:background="@color/White"
+                android:padding="@dimen/space5dp"
+
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/space10dp"
+                android:text="@string/xbox_one"
+                android:textColor="@color/newblack"
+                android:textSize="@dimen/text25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/platformInfoSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space10dp"
+            android:text="Summary"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/platformInfoSummary"
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space5dp"
+            android:padding="2dp"
+            android:text="Welcome to a new generation of games and entertainment. Where games push the boundaries of realism. And television obeys your every command. Where listening to music while playing a game is a snap. And you can jump from TV to movies to music to a game in an instant. Where your experience is custom tailored to you. And the entertainment you love is all in one place. Welcome to the all-in-one, Xbox One"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space10dp"
+            android:text="@string/versions"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space10dp"
+            android:text="@string/xbox_one_scorpio"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xboxonex" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+
+            android:text="@string/information"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformOsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/os"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformOsText"
+                android:padding="2dp"
+                android:text="         Xbox OS"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformcpuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/cpu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformcpuText"
+                android:padding="2dp"
+                android:text="@string/_8_core_amd_custom_cpu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformgraphicsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/graphics"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformgraphicsText"
+                android:padding="2dp"
+                android:text="@string/integrated_amd_graphics_with_6_teraflops_of_performance"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformsummaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/summary"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformsummaryText"
+                android:padding="2dp"
+                android:text="@string/announced_as_project_scorpio_it_is_the_next_version_of_the_xbox_one_nadvertised_as_having_true_4k_gaming_with_6_teraflops_of_gpu_processing_power_and_320gb_s_memory_bandwidth_planned_for_release_at_the_end_of_2017"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space10dp"
+            android:text="@string/xbox_one_s"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xboxones" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+
+            android:text="@string/information"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformOsText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/os"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformOsText1"
+                android:padding="2dp"
+                android:text="@string/xbox_os"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformcpuText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="cpu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformcpuText1"
+                android:padding="2dp"
+                android:text="@string/_1_75ghz_8_core_amd_custom_cpu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformgraphicsText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/graphics"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformgraphicsText1"
+                android:padding="2dp"
+                android:text="@string/amd_graphics_clocked_at_914mhz"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformsummaryText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/summary"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformsummaryText1"
+                android:padding="2dp"
+                android:text="@string/xbox_one_s_has_over_100_exclusive_games_built_in_4k_ultra_hd_blu_ray_and_4k_video_streaming"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformsummaryrelease1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/release_date"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformsummaryrelease1"
+                android:padding="2dp"
+                android:text="@string/_27_sept_2016"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space20dp"
+            android:text="@string/for_more_information"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/platformOfficialSite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space20dp"
+            android:gravity="center"
+            android:text="@string/go_to_official_site"
+            android:textColor="@color/White"
+            android:textSize="30sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

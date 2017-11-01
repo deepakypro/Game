@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+
+    tools:context="com.thelosers.game.StartingActivities.SignIn">
+
+    <ImageView
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent"
+        android:src="@drawable/loginscreen" />
+
+    <ProgressBar
+        android:id="@+id/loginProgressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="@dimen/space20dp"
+        android:layout_marginStart="@dimen/space20dp"
+        android:background="@color/White" />
+</RelativeLayout>

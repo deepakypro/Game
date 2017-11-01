@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.thelosers.game.Home.HomeU">
+
+    <include
+        android:id="@+id/homeNoInternet"
+        layout="@layout/nointernet"
+        android:visibility="gone" />
+
+    <ScrollView
+
+        android:id="@+id/homeShowInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/White"
+                android:focusableInTouchMode="true">
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/space10dp"
+                    android:background="@color/White"
+                    android:onClick="onclick_menu_show"
+                    android:padding="@dimen/space10dp"
+                    android:src="@drawable/ic_menu_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/homePlatformLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginEnd="@dimen/space10dp"
+                    android:layout_toStartOf="@+id/onClickSearchActivity"
+                    android:background="@color/White"
+                    android:onClick="onClickSearchActivity"
+                    android:padding="@dimen/space10dp" />
+
+                <ImageButton
+                    android:id="@+id/onClickSearchActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/space10dp"
+                    android:background="@color/White"
+                    android:onClick="onClickSearchActivity"
+                    android:padding="@dimen/space10dp"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardeleven"
+
+
+                style="@style/MyCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginEnd="@dimen/space5dp"
+                android:layout_marginStart="@dimen/space5dp"
+                android:layout_marginTop="70dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/todayPickImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/space60dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="30dp" />
+
+
+                    <TextView
+                        android:id="@+id/todayPickName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="30dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="@dimen/space5dp"
+                        android:layout_marginEnd="@dimen/space10dp"
+
+                        android:text=" Upcoming Game"
+                        android:padding="@dimen/space5dp"
+
+                        android:textColor="@color/newblack"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardone"
+
+
+                style="@style/MyCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@+id/cardeleven"
+                android:layout_marginEnd="@dimen/space5dp"
+                android:layout_marginStart="@dimen/space5dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:id="@+id/upcomingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space10dp"
+                        android:layout_marginTop="@dimen/space5dp"
+                        android:text="@string/upcoming"
+                        android:textColor="@color/newblack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/space10dp"
+                        android:layout_marginTop="@dimen/space5dp"
+                        android:onClick="onclickMoreUpcoming"
+                        android:padding="@dimen/space5dp"
+                        android:text="@string/more"
+                        android:textColor="@color/newblack"
+                        android:textSize="12sp" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/homeRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:layout_below="@+id/upcomingText"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="@dimen/space5dp"
+                        android:padding="@dimen/space10dp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/homeUpcomingProgrebar"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardtwo"
+
+                style="@style/MyCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/cardone"
+                android:layout_marginEnd="@dimen/space5dp"
+                android:layout_marginStart="@dimen/space5dp"
+                android:layout_marginTop="@dimen/space20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/platformText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="@dimen/space10dp"
+                        android:layout_marginTop="@dimen/space5dp"
+                        android:text="@string/platform"
+                        android:textColor="@color/newblack"
+                        android:textSize="@dimen/text16sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/linearOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/platformText"
+
+                        android:layout_marginTop="@dimen/space10dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/xboxcolor"
+                            android:gravity="center"
+                            android:onClick="onClickXboxSearch"
+                            android:src="@drawable/xbox" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/playstationcolor"
+                            android:gravity="center"
+                            android:onClick="onClickPlaystationSearch"
+                            android:src="@drawable/playstation" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/linearOne">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/White"
+                            android:gravity="center"
+                            android:onClick="onClickWindowSearch"
+                            android:src="@drawable/windows" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/nintendocolor"
+                            android:gravity="center"
+                            android:onClick="onClickNintendoSearch"
+                            android:src="@drawable/nintendo" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                style="@style/MyCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@+id/cardtwo"
+                android:layout_marginEnd="@dimen/space5dp"
+                android:layout_marginStart="@dimen/space5dp"
+                android:layout_marginTop="@dimen/space20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/popularText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="@dimen/space10dp"
+                        android:layout_marginTop="@dimen/space5dp"
+                        android:text="@string/popular"
+                        android:textColor="@color/newblack"
+                        android:textSize="@dimen/text16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_marginEnd="@dimen/space10dp"
+                        android:layout_marginTop="@dimen/space5dp"
+                        android:onClick="onClickMorePopular"
+                        android:padding="@dimen/space5dp"
+                        android:text="@string/more"
+                        android:textColor="@color/newblack"
+                        android:textSize="12sp" />
+
+
+                    <android.support.v7.widget.RecyclerView
+
+                        android:id="@+id/popularhomeRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:layout_below="@+id/popularText"
+                        android:layout_marginTop="@dimen/space5dp"
+                        android:padding="@dimen/space10dp" />
+
+                    <ProgressBar
+                        android:id="@+id/homePopularProgressbar"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

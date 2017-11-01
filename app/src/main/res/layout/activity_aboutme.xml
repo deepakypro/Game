@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/blue"
+
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        style="@style/MyCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        card_view:cardCornerRadius="10dp"
+        card_view:elevation="12dp">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White">
+
+            <RelativeLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/aboutusclose"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:padding="10dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/aboutus_myImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:onClick="onClickInstagramProfile"
+                    android:src="@drawable/mypic" />
+
+
+                <TextView
+                    android:id="@+id/aboutMeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutus_myImage"
+                    android:layout_marginTop="40dp"
+                    android:padding="@dimen/space10dp"
+                    android:text="Being a 23 year old Developer. I have developed this cool app all by myself . If you like my project which I know most of you will then you can offer me an internship or a job , it would be great for both of us. In case you face any problem or have a mind blowing suggestion regarding the app then don't be afraid to contact me via email because I don't usually bite stranger :P "
+                    android:textColor="@color/newblack"
+
+                    android:textSize="@dimen/text16sp" />
+
+
+                <TextView
+                    android:id="@+id/aboutMeSendMeEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutMeText"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/mybutton"
+                    android:gravity="center"
+                    android:onClick="onclickSendMeAnEmail"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="35dp"
+                    android:paddingStart="35dp"
+                    android:paddingTop="15dp"
+                    android:text="Send Me An Email"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutMeSendMeEmail"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/brandlogo" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

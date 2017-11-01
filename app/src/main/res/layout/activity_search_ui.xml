@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.thelosers.game.Search.SearchUi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space60dp"
+        android:background="@color/White">
+
+        <EditText
+            android:singleLine="true"
+            android:maxLines="1"
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space60dp"
+            android:layout_weight="5"
+
+            android:background="@color/White"
+
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:paddingStart="@dimen/space20dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="searchButton">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_search_black_24dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/searchListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+    </ListView>
+
+
+</RelativeLayout>

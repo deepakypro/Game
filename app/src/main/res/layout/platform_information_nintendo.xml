@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nintendocolor"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space56dp">
+
+            <ImageButton
+                android:id="@+id/platformClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space10dp"
+                android:layout_marginTop="@dimen/space10dp"
+                android:background="@color/White"
+                android:padding="@dimen/space5dp"
+
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/space10dp"
+                android:text="Nintendo Switch"
+                android:textColor="@color/newblack"
+                android:textSize="@dimen/text25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <ImageView
+            android:layout_marginTop="@dimen/space10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nintendoswitch"
+            />
+
+        <TextView
+
+            android:layout_marginTop="@dimen/space10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+
+            android:text="@string/information"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformOsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="storage"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformOsText"
+                android:padding="2dp"
+                android:text=" 32 GB NAND flash, expandable via microSD cards"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformcpuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/cpu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformcpuText"
+                android:padding="2dp"
+                android:text="Custom NVIDIA Tegra"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformgraphicsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="resolutions"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformgraphicsText"
+                android:padding="2dp"
+                android:text="1280x720 on integrated screen, up to 1920x1080 through HDMI"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformsummaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/summary"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformsummaryText"
+                android:padding="2dp"
+                android:text="Nintendo Switch is a hybrid console/tablet. The tablet becomes a console via a docking station connected to a tv set. Nintendo regards the concept as mainly a home gaming system rather than portable. The Switch features two wireless controllers, which may be used individually or attached to a grip to get a more traditional controller."
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space20dp"
+            android:text="@string/for_more_information"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/platformOfficialSite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space20dp"
+            android:gravity="center"
+            android:text="@string/go_to_official_site"
+            android:textColor="@color/White"
+            android:textSize="30sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

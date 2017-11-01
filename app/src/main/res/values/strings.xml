@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Game Info</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="platform">Platform</string>
+    <string name="popular">Popular</string>
+    <string name="more">more</string>
+    <string name="search">Search</string>
+    <string name="description">Description</string>
+    <string name="story_teller">Storyline</string>
+    <string name="information">Information</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="screenshots">Screenshots</string>
+    <string name="genre">Genre :</string>
+    <string name="game_modes">Game Modes :</string>
+    <string name="publishers">Publishers :</string>
+    <string name="developers">Developers :</string>
+    <string name="themes">Themes :</string>
+    <string name="xbox_one_s">Xbox One S</string>
+    <string name="for_more_information">For more Information</string>
+    <string name="go_to_official_site">Go To Official site</string>
+    <string name="release_date">release date</string>
+    <string name="_27_sept_2016">27-sept-2016</string>
+    <string name="xbox_one_s_has_over_100_exclusive_games_built_in_4k_ultra_hd_blu_ray_and_4k_video_streaming">Xbox One S has over 100 exclusive games, built-in 4K Ultra HD Blu-ray™ and 4K video streaming.</string>
+    <string name="summary">summary</string>
+    <string name="graphics">graphics</string>
+    <string name="amd_graphics_clocked_at_914mhz">AMD graphics clocked at 914MHz</string>
+    <string name="_1_75ghz_8_core_amd_custom_cpu">1.75GHz 8-core AMD custom CPU</string>
+    <string name="xbox_os">Xbox OS</string>
+    <string name="os">Os</string>
+    <string name="announced_as_project_scorpio_it_is_the_next_version_of_the_xbox_one_nadvertised_as_having_true_4k_gaming_with_6_teraflops_of_gpu_processing_power_and_320gb_s_memory_bandwidth_planned_for_release_at_the_end_of_2017">Announced as Project Scorpio, it is the next version of the Xbox One.  Advertised as having true 4k gaming with 6 teraflops of GPU processing power and 320gb/s memory bandwidth. Planned for release at the end of 2017.</string>
+    <string name="integrated_amd_graphics_with_6_teraflops_of_performance">Integrated AMD graphics with 6 teraflops of performance</string>
+    <string name="_8_core_amd_custom_cpu">8-core AMD custom CPU</string>
+    <string name="cpu">cpu</string>
+    <string name="xbox_one_scorpio">Xbox One Scorpio</string>
+    <string name="versions">Versions</string>
+    <string name="xbox_one">Xbox One</string>
+    <string name="playstation_4_slim">PlayStation 4 Slim</string>
+    <string name="orbis_os">Orbis OS</string>
+    <string name="x86_64_amd_jaguar_8_cores">x86-64 AMD Jaguar, 8 cores</string>
+    <string name="_1_84_tflops_amd_radeon_based_graphics_engine">1.84 TFLOPS, AMD Radeon based graphics engine</string>
+    <string name="when_comparing_the_new_ps4_model_to_the_current_model_we_ve_reduced_volume_by_30_percent_weight_by_16_percent_and_power_consumption_by_28_percent_despite_the_sleek_design_the_new_model_packs_all_of_the_same_powerful_components_that_have_made_ps4_the_best_place_to_play">When comparing the new PS4 model to the current model, we’ve reduced volume by 30 percent, weight by 16 percent, and power consumption by 28 percent. Despite the sleek design, the new model packs all of the same powerful components that have made PS4 the best place to play</string>
+    <string name="_4_20_tflops_amd_radeon_based_graphics_engine">4.20 TFLOPS, AMD Radeon™ based graphics engine</string>
+    <string name="also_known_as_the_ps4_neo_and_ps4_5ps4_pro_is_a_high_end_version_of_ps4_that_is_capable_of_outputting_4k_graphics_hdr_support_smoother_and_more_stable_framerates_and_4k_video_streaming_upon_its_launch_ps4_pro_will_make_supported_ps4_games_look_better_and_run_more_smoothly_while_giving_developers_an_upgraded_toolset_to_create_even_richer_more_detailed_game_worlds_how_these_powerful_new_tools_are_used_is_up_to_individual_developers_and_the_experience_they_are_creating">Also Known as the PS4 Neo and PS4.5PS4 Pro is a high-end version of PS4 that is capable of outputting 4K graphics, HDR support, smoother and more stable framerates, and 4K video streaming. Upon its launch, PS4 Pro will make supported PS4 games look better and run more smoothly, while giving developers an upgraded toolset to create even richer, more detailed game worlds. How these powerful new tools are used is up to individual developers and the experience they are creating.</string>
+    <string name="logout">logout</string>
+    <string name="recently_released">Recently Released</string>
+</resources>

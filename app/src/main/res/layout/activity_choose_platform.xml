@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+
+    android:orientation="vertical"
+    tools:context="com.thelosers.game.StartingActivities.ChoosePlatform">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space56dp"
+        android:background="@color/White">
+
+        <TextView
+            android:id="@+id/upcomingListUi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+           android:layout_centerInParent="true"
+            android:text="Choose Your Platform"
+            android:textColor="@color/newblack"
+            android:textSize="@dimen/text25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginEnd="@dimen/space10dp"
+                android:layout_marginStart="@dimen/space10dp"
+                android:layout_marginTop="@dimen/space20dp"
+                android:background="@color/xboxcolor"
+                android:onClick="onClickChooseXbox"
+                android:src="@drawable/xbox" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginEnd="@dimen/space10dp"
+                android:layout_marginStart="@dimen/space10dp"
+                android:background="@color/playstationcolor"
+                android:onClick="onClickChoosePlaystation"
+                android:src="@drawable/playstation" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginEnd="@dimen/space10dp"
+                android:layout_marginStart="@dimen/space10dp"
+                android:background="@color/White"
+                android:onClick="onClickChooseWindow"
+                android:src="@drawable/windows" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginEnd="@dimen/space10dp"
+                android:layout_marginStart="@dimen/space10dp"
+                android:background="@color/nintendocolor"
+                android:onClick="onClickChooseNintendo"
+                android:src="@drawable/nintendo" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <color name="colorPrimary">#2c3e50</color>
+    <color name="colorPrimaryDark">#1d2127</color>
+    <color name="black">#000</color>
+    <color name="colorAccent">#fff</color>
+    <color name="White">#fff</color>
+    <color name="choose1">#ff757b</color>
+
+    <color name="background">#f4f4f4</color>
+    <color name="splashcolor">#3A3746</color>
+    <color name="newblack">#3a3844</color>
+    <color name="gray">#a8a8a8</color>
+    <color name="blue">#1d2127</color>
+    <color name="xboxcolor">#177d3e</color>
+    <color name="nintendocolor">#e1131f</color>
+    <color name="playstationcolor">#00499b</color>
+
+
+</resources>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/playstationcolor"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space56dp">
+
+            <ImageButton
+                android:id="@+id/platformClose"
+                android:layout_width="wrap_content"
+                android:background="@color/White"
+                android:layout_marginStart="@dimen/space10dp"
+                android:padding="@dimen/space5dp"
+                android:layout_marginTop="@dimen/space10dp"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="PlayStation 4"
+                android:textColor="@color/newblack"
+                android:textSize="@dimen/text25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/platformInfoSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space10dp"
+            android:text="Summary"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/platformInfoSummary"
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space5dp"
+            android:padding="2dp"
+            android:text="The PlayStation 4 system opens the door to an incredible journey through immersive new gaming worlds and a deeply connected gaming community. PS4 puts gamers first with an astounding launch line-up and over 180 games in development. Play amazing top-tier blockbusters and innovative indie hits on PS4. Developer inspired, gamer focused."
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text16sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space10dp"
+            android:text="@string/versions"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space10dp"
+            android:text="@string/playstation_4_slim"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xboxonex"
+            android:visibility="gone" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+
+            android:text="@string/information"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformOsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/os"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformOsText"
+                android:padding="2dp"
+                android:text="@string/orbis_os"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformcpuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/cpu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformcpuText"
+                android:padding="2dp"
+                android:text="@string/x86_64_amd_jaguar_8_cores"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformgraphicsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/graphics"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformgraphicsText"
+                android:padding="2dp"
+                android:text="@string/_1_84_tflops_amd_radeon_based_graphics_engine"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformsummaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/summary"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformsummaryText"
+                android:padding="2dp"
+                android:text="@string/when_comparing_the_new_ps4_model_to_the_current_model_we_ve_reduced_volume_by_30_percent_weight_by_16_percent_and_power_consumption_by_28_percent_despite_the_sleek_design_the_new_model_packs_all_of_the_same_powerful_components_that_have_made_ps4_the_best_place_to_play"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space10dp"
+            android:text="PlayStation 4 Pro"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/psppro"
+             />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="@dimen/space20dp"
+
+            android:text="@string/information"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformOsText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/os"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformOsText1"
+                android:padding="2dp"
+                android:text="@string/orbis_os"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformcpuText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="cpu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformcpuText1"
+                android:padding="2dp"
+                android:text="@string/x86_64_amd_jaguar_8_cores"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformgraphicsText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/graphics"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformgraphicsText1"
+                android:padding="2dp"
+                android:text="@string/_4_20_tflops_amd_radeon_based_graphics_engine"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/platformsummaryText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:padding="2dp"
+                android:text="@string/summary"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space20dp"
+                android:layout_marginTop="@dimen/space5dp"
+                android:layout_toEndOf="@+id/platformsummaryText1"
+                android:padding="2dp"
+android:text="@string/also_known_as_the_ps4_neo_and_ps4_5ps4_pro_is_a_high_end_version_of_ps4_that_is_capable_of_outputting_4k_graphics_hdr_support_smoother_and_more_stable_framerates_and_4k_video_streaming_upon_its_launch_ps4_pro_will_make_supported_ps4_games_look_better_and_run_more_smoothly_while_giving_developers_an_upgraded_toolset_to_create_even_richer_more_detailed_game_worlds_how_these_powerful_new_tools_are_used_is_up_to_individual_developers_and_the_experience_they_are_creating"                android:textColor="@color/gray"
+                android:textSize="@dimen/text16sp" />
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space20dp"
+            android:text="@string/for_more_information"
+            android:textColor="@color/newblack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/platformOfficialSite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space20dp"
+            android:gravity="center"
+            android:text="@string/go_to_official_site"
+            android:textColor="@color/White"
+            android:textSize="30sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
